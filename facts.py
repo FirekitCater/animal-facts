@@ -1,8 +1,9 @@
 print("Welcome to the Amazing Digital Animal Fact Giver v.0.01!")
-version = 0.01
+import random
+version = 0.02
 print("Disclaimer: Insects are not included (i'm entomophobic)")
-print("Below is a list of all animals in the system as of [JULY 2, 2026]: ")
-print("cat, dog, rabbit, turtle (try variations like puppy, kitty, bunbun or sea turtle too!)")
+print("Below is a list of all animals in the system as of [JULY 6, 2026]: ")
+print("cat, dog, rabbit, turtle, gecko, sheep (try variations like puppy, kitty, bunbun or sea turtle too!)")
 print("Type 'HELP' instead of Y/N below for a full updated list of variations and allowed syntax for the search query!")
 ans = input("Would you like to ask for an animal fact? (Y/N): ")
 
@@ -23,11 +24,13 @@ while ans == "HELP" or ans == "help":
         print("DOG: dog, dogs, puppy, puppies, puppydog, pup, pups, puppydogs")
         print("RABBIT: rabbit, rabbits, bunny, bunnies, bun, buns, bunbun, bunbuns")
         print("TURTLE: turtle, turtles, sea turtle, sea turtles")
+        print("GECKO: gecko, geckos, gecky, geckies")
+        print("SHEEP: sheep, sheeps, lamb, lambs")
         shamura = input("Would you like to see the ALLOWED SYNTAX or SEARCH already? ")
 
 while ans == "Y" or ans == "y":
     animal = input("What animal would you like to learn about today?: ")
-    #text wall incoming gulps
+    #COLLAPSE THIS LMAOOOOOO
     if animal == "cat" or animal == "kitty" or animal == "kittycat" or animal == "kittycats" or animal == "pussycat" or animal == "pussycats" or animal == "cats" or animal == "kitties" or animal == "kitten" or animal == "kittens":
         print("Not many people know that cats have an organ in the roof of their mouth called the vomeronasal organ (or Jacobson's organ).")
         print("This organ allows cats to inspect scents and pheromones more throroughly.")
@@ -56,6 +59,19 @@ while ans == "Y" or ans == "y":
         print("A sea turtle can live for over 100 years.")
         print("Only 1 in 1000 sea turtles survive to adulthood.")
         ans = input("Would you like to search for another animal?")
+    elif animal == "gecko" or animal == "geckos" or animal == "gecky" or animal == "geckies":
+        print("Geckos are mostly nocturnal lizards.")
+        print("Geckos have a really strong sense of smell.")
+        print("Geckos are NOT low-maintenance!!!")
+        ans = input("Would you like facts about another animal?")
+    elif animal == "sheep" or animal == "sheeps" or animal == "lamb" or animal == "lambs":
+        print("Sheep have incredible facial recognition.")
+        print("They can recognize and remember up to 50 sheep faces and at least 10 human faces for over two years!")
+        print("They can also see between 270 and 320 degrees without moving their heads!")
+        print("To put things into perspective, we can only see 120 to 130 degrees without moving our heads.")
+        ans = input("Would you like facts about another animal?")
+
 
 if ans == "N" or ans == "n":
     print("Okay, goodbye! Start me again if you ever change your mind. :3")
+
